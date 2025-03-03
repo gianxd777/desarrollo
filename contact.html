@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>The Systmes House</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area sub_pages">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/7.png" alt="" /><span>
+              The Systems House
+            </span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="fruit.html"> Portafolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="service.html"> Servicios </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html"> contactenos </a>
+                </li>
+              </ul>
+              
+            </div>
+            <div class="quote_btn-container ml-0 ml-lg-4 d-flex justify-content-center">
+              <a href="https://wa.me/926727267" target="_blank" class="btn btn-primary">
+                  WhatsApp
+              </a>
+          </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  </div>
+
+
+
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container">
+      <h2 class="font-weight-bold">
+        Contactenos
+      </h2>
+      <div class="row">
+        <div class="col-md-8 mr-auto">
+            <form action="" id="contactForm" method="GET">
+                <div class="contact_form-container">
+                    <div>
+                        <div>
+                            <input type="text" id="name" placeholder="Nombre y Apellido" required>
+                        </div>
+                        <div>
+                            <input type="text" id="dni" placeholder="DNI" required>
+                        </div>
+                        <div>
+                            <input type="text" id="company" placeholder="Nombre de la empresa" required>
+                        </div>
+                        <div>
+                            <input type="text" id="phone" placeholder="Número de celular" required>
+                        </div>
+    
+                        <div class="mt-5">
+                            <input type="text" id="message" placeholder="Mensaje de que servicio quiere o idea" required>
+                        </div>
+                        <div class="mt-5">
+                            <button type="submit">ENVIAR</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (event) {
+            event.preventDefault(); // Evitar el envío tradicional del formulario
+    
+            // Obtener los valores del formulario
+            var name = document.getElementById("name").value;
+            var dni = document.getElementById("dni").value;
+            var company = document.getElementById("company").value;
+            var phone = document.getElementById("phone").value; // Número de celular
+            var message = document.getElementById("message").value;
+    
+            // Crear el mensaje que se enviará por WhatsApp
+            var whatsappMessage = "Nombre y Apellido: " + name + "%0A" +
+                                   "DNI: " + dni + "%0A" +
+                                   "Nombre de la Empresa: " + company + "%0A" +
+                                   "Número de Celular: " + phone + "%0A" + // Incluir el número de celular
+                                   "Mensaje: " + message;
+    
+            // Enlace de WhatsApp
+            var whatsappLink = "https://wa.me/926727267?text=" + whatsappMessage;
+    
+            // Redirigir al enlace de WhatsApp
+            window.open(whatsappLink, "_blank");
+        });
+    </script>
+    
+    
+    </div>
+  </section>
+  <!-- end contact section -->
+
+
+  <section class="info_section layout_padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <h5>
+            Sobre Nosotros
+          </h5>
+          <ul>
+            <li>
+              <p>Nos especializamos en el desarrollo de soluciones de software de alta calidad, utilizando una amplia gama de tecnologías de vanguardia. Contamos con experiencia en herramientas como HTML, CSS, JavaScript, React, PHP, Python, Java, Kotlin y Android para ofrecer productos robustos, escalables y completamente funcionales.</p>
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>
+            Enlaces Rapidos
+          </h5>
+          <ul>
+            
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="service.html">Servicios</a></li>
+              <li><a href="contact.html">Contacto</a></li>
+              <li><a href="index.html">Sobre Nosotros</a></li>
+            
+            
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h5>
+            Contactenos
+          </h5>
+          <ul>
+            <p><strong>Dirección:</strong> <a href="https://maps.app.goo.gl/FmrLXYEfw7MB6mKg6" target="_blank">Local Principal</a></p>
+                <p><strong>Whatsap:
+
+                </strong>(+51) 926 727 267</p>
+                
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <div class="social_container">
+            <h5>
+              Siguenos
+            </h5>
+            <div class="social-box">
+              <a href="https://www.facebook.com/profile.php?id=100084855360384">
+                <img src="images/fb.png" alt="">
+              </a>
+
+              
+              
+              <a href="https://www.instagram.com/the_systems_house_777/?hl=es-la">
+                <img src="images/instagram.png" alt="">
+              </a>
+            </div>
+          </div>
+          <div class="subscribe_container">
+            <h5>
+                Danos tu opinión para seguir mejorando
+            </h5>
+            <div class="form_container">
+                <form action="" id="opinionForm">
+                    <input type="text" id="opinion" placeholder="Escribe tu opinión aquí..." required>
+                    <button type="submit">
+                        ENVIAR OPINIÓN
+                    </button>
+                </form>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById("opinionForm").addEventListener("submit", function (event) {
+                event.preventDefault(); // Prevenir el comportamiento tradicional del formulario
+        
+                // Obtener la opinión del usuario
+                var opinion = document.getElementById("opinion").value;
+        
+                // Crear el mensaje para WhatsApp
+                var whatsappMessage = "Opinión: " + opinion;
+        
+                // Enlace de WhatsApp
+                var whatsappLink = "https://wa.me/926727267?text=" + encodeURIComponent(whatsappMessage);
+        
+                // Redirigir al enlace de WhatsApp
+                window.open(whatsappLink, "_blank");
+            });
+        </script>
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>
+       &copy; 2025 The Systems House
+      <a href="index.html"> Todos los derechos reservados</a>
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+  <script>
+    // This example adds a marker to indicate the position of Bondi Beach in Sydney,
+    // Australia.
+    function initMap() {
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 11,
+        center: {
+          lat: 40.645037,
+          lng: -73.880224
+        },
+      });
+
+      var image = 'images/maps-and-flags.png';
+      var beachMarker = new google.maps.Marker({
+        position: {
+          lat: 40.645037,
+          lng: -73.880224
+        },
+        map: map,
+        icon: image
+      });
+    }
+  </script>
+  <!-- google map js -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap">
+  </script>
+  <!-- end google map js -->
+</body>
+
+</html>
